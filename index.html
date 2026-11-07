@@ -1,0 +1,484 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>ART AUCTION | Discover Extraordinary Art</title>
+
+    <meta name="description" content="Discover extraordinary artworks, explore exclusive collections and participate in exciting art auctions.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <header class="header">
+        <nav class="navbar container">
+
+            <a href="#" class="logo">
+                ART<span>AUCTION.</span>
+            </a>
+
+            <button class="menu-toggle" id="menuToggle"
+                aria-label="Toggle navigation" aria-expanded="false">
+                ☰
+            </button>
+
+            <ul class="nav-links" id="navLinks">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#auctions">Auctions</a></li>
+                <li><a href="#collections">Collections</a></li>
+                <li><a href="#about">About Us</a></li>
+            </ul>
+
+            <a href="#auctions" class="nav-button">Explore Art ↗</a>
+
+        </nav>
+    </header>
+
+
+    <!-- HERO SECTION -->
+    <section class="hero" id="home">
+
+        <div class="hero-overlay"></div>
+
+        <div class="container hero-content">
+
+            <span class="hero-label">
+                ✦ THE WORLD OF FINE ART
+            </span>
+
+            <h1>
+                Art is not just seen.<br>
+                <span>It is experienced.</span>
+            </h1>
+
+            <p>
+                Discover exceptional artworks, connect with talented artists
+                and own something truly extraordinary.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="#auctions" class="primary-btn">
+                    Explore Auctions ↗
+                </a>
+
+                <a href="#about" class="secondary-btn">
+                    Discover Our Story
+                </a>
+            </div>
+
+            <div class="hero-stats">
+
+                <div>
+                    <h3>2.5K+</h3>
+                    <p>Artworks Sold</p>
+                </div>
+
+                <div>
+                    <h3>850+</h3>
+                    <p>Artists</p>
+                </div>
+
+                <div>
+                    <h3>35+</h3>
+                    <p>Countries</p>
+                </div>
+
+            </div>
+
+        </div>
+    </section>
+
+
+    <!-- INTRODUCTION -->
+    <section class="intro section-padding" id="about">
+
+        <div class="container intro-grid">
+
+            <div>
+                <span class="section-tag">WELCOME TO ART AUCTION</span>
+
+                <h2 class="section-title">
+                    Where creativity<br>
+                    meets <span>collectors.</span>
+                </h2>
+            </div>
+
+            <div class="intro-description">
+                <p>
+                    We bring together passionate artists, art enthusiasts
+                    and collectors in one inspiring destination.
+                    Discover unique masterpieces and find art that
+                    tells your story.
+                </p>
+
+                <a href="#collections" class="text-link">
+                    Explore our collections →
+                </a>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- AUCTION SECTION -->
+    <section class="auctions section-padding" id="auctions">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">CURATED FOR YOU</span>
+                    <h2 class="section-title">
+                        Featured <span>Auctions</span>
+                    </h2>
+                </div>
+
+                <p>
+                    Discover extraordinary pieces from
+                    talented artists around the world.
+                </p>
+
+            </div>
+
+
+            <!-- SEARCH AND FILTER -->
+            <div class="filter-area">
+
+                <div class="search-box">
+                    <span>⌕</span>
+                    <input
+                        type="search"
+                        id="searchInput"
+                        placeholder="Search artworks or artists..."
+                        aria-label="Search artworks">
+                </div>
+
+                <div class="filter-buttons">
+
+                    <button class="filter-btn active" data-category="All">
+                        All Art
+                    </button>
+
+                    <button class="filter-btn" data-category="Painting">
+                        Painting
+                    </button>
+
+                    <button class="filter-btn" data-category="Photography">
+                        Photography
+                    </button>
+
+                    <button class="filter-btn" data-category="Sculpture">
+                        Sculpture
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- ARTWORK CARDS -->
+            <div class="art-grid" id="artGrid">
+                <!-- Cards are generated using JavaScript -->
+            </div>
+
+            <p class="no-results" id="noResults" hidden>
+                No artworks found. Try another search.
+            </p>
+
+        </div>
+
+    </section>
+
+
+    <!-- COLLECTIONS SECTION -->
+    <section class="collections section-padding" id="collections">
+
+        <div class="container">
+
+            <div class="section-heading">
+
+                <div>
+                    <span class="section-tag">EXPLORE BY STYLE</span>
+
+                    <h2 class="section-title">
+                        Discover <span>Collections</span>
+                    </h2>
+                </div>
+
+            </div>
+
+
+            <div class="collection-grid">
+
+                <a href="#auctions" class="collection-card"
+                    data-collection="Painting">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1541961017774-22349e4a1262?w=800"
+                        alt="Colorful abstract painting">
+
+                    <div class="collection-info">
+                        <span>01 / EXPLORE</span>
+                        <h3>Modern Art</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#auctions" class="collection-card"
+                    data-collection="Photography">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1470770841072-f978cf4d019e?w=800"
+                        alt="Landscape photography">
+
+                    <div class="collection-info">
+                        <span>02 / EXPLORE</span>
+                        <h3>Photography</h3>
+                    </div>
+
+                </a>
+
+
+                <a href="#auctions" class="collection-card"
+                    data-collection="Sculpture">
+
+                    <img
+                        src="https://images.unsplash.com/photo-1577083552431-6e5fd01aa342?w=800"
+                        alt="Artistic sculpture">
+
+                    <div class="collection-info">
+                        <span>03 / EXPLORE</span>
+                        <h3>Sculptures</h3>
+                    </div>
+
+                </a>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- WHY CHOOSE US -->
+    <section class="features section-padding">
+
+        <div class="container">
+
+            <div class="center-heading">
+                <span class="section-tag">THE ART AUCTION EXPERIENCE</span>
+
+                <h2 class="section-title">
+                    Art collecting, <span>reimagined.</span>
+                </h2>
+            </div>
+
+
+            <div class="features-grid">
+
+                <div class="feature-card">
+                    <div class="feature-icon">✦</div>
+                    <h3>Unique Masterpieces</h3>
+                    <p>
+                        Discover exclusive and carefully
+                        curated artworks from emerging
+                        and established artists.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">◇</div>
+                    <h3>Trusted Experience</h3>
+                    <p>
+                        Enjoy a transparent auction
+                        experience with detailed artwork
+                        information.
+                    </p>
+                </div>
+
+
+                <div class="feature-card">
+                    <div class="feature-icon">↗</div>
+                    <h3>Global Community</h3>
+                    <p>
+                        Connect with artists and art lovers
+                        from different cultures and
+                        backgrounds.
+                    </p>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- NEWSLETTER -->
+    <section class="newsletter">
+
+        <div class="container newsletter-content">
+
+            <span class="section-tag">STAY INSPIRED</span>
+
+            <h2>
+                Art lovers deserve<br>
+                <span>something special.</span>
+            </h2>
+
+            <p>
+                Subscribe to receive exclusive auction updates,
+                new collections and artistic inspiration.
+            </p>
+
+            <form id="newsletterForm" class="newsletter-form">
+
+                <input
+                    type="email"
+                    id="emailInput"
+                    placeholder="Enter your email address"
+                    required
+                    aria-label="Email address">
+
+                <button type="submit">
+                    Subscribe ↗
+                </button>
+
+            </form>
+
+            <p class="form-message" id="formMessage"
+                aria-live="polite"></p>
+
+        </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+    <footer class="footer">
+
+        <div class="container">
+
+            <div class="footer-grid">
+
+                <div class="footer-about">
+
+                    <a href="#" class="logo">
+                        ART<span>AUCTION.</span>
+                    </a>
+
+                    <p>
+                        Bringing art closer to people.
+                        Discover, collect and celebrate
+                        extraordinary creativity.
+                    </p>
+
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Explore</h4>
+                    <a href="#home">Home</a>
+                    <a href="#auctions">Auctions</a>
+                    <a href="#collections">Collections</a>
+                    <a href="#about">About Us</a>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Information</h4>
+                    <a href="#about">Our Story</a>
+                    <a href="#auctions">How It Works</a>
+                    <a href="#auctions">Featured Art</a>
+                    <a href="#home">Contact</a>
+                </div>
+
+
+                <div class="footer-links">
+                    <h4>Follow Us</h4>
+                    <a href="https://www.instagram.com/" target="_blank" rel="noopener noreferrer">Instagram ↗</a>
+                    <a href="https://www.facebook.com/" target="_blank" rel="noopener noreferrer">Facebook ↗</a>
+                    <a href="https://www.pinterest.com/" target="_blank" rel="noopener noreferrer">Pinterest ↗</a>
+                </div>
+
+            </div>
+
+
+            <div class="footer-bottom">
+
+                <p>© 2026 ART AUCTION. All Rights Reserved.</p>
+
+                <p>Designed with passion for art. ✦</p>
+
+            </div>
+
+        </div>
+
+    </footer>
+
+
+    <!-- BID MODAL -->
+    <div class="modal" id="bidModal"
+        role="dialog" aria-modal="true"
+        aria-labelledby="modalTitle" aria-hidden="true">
+
+        <div class="modal-content">
+
+            <button class="modal-close" id="closeModal"
+                aria-label="Close dialog">×</button>
+
+            <span class="section-tag">PLACE YOUR BID</span>
+
+            <h2 id="modalTitle">Artwork Name</h2>
+
+            <p class="modal-current">
+                Current bid: <strong id="modalCurrentBid"></strong>
+            </p>
+
+            <form id="bidForm">
+
+                <label for="bidAmount">Your bid amount ($)</label>
+
+                <input
+                    type="number"
+                    id="bidAmount"
+                    min="1"
+                    step="1"
+                    required>
+
+                <button type="submit" class="primary-btn">
+                    Confirm Bid ↗
+                </button>
+
+            </form>
+
+            <p class="bid-message" id="bidMessage"
+                aria-live="polite"></p>
+
+            <p class="demo-note">
+                Demo project: bids are simulated and no payment is processed.
+            </p>
+
+        </div>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
